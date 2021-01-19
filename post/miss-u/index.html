@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Miss U | Gridea</title>
+<link rel="shortcut icon" href="https://https://koalabj1205.github.io/missu//favicon.ico?v=1611071110293">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://https://koalabj1205.github.io/missu//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Miss U | Gridea - Atom Feed" href="https://https://koalabj1205.github.io/missu//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="每当想你却又无法向你倾诉的时候，在这里记录一点点心情吧，不论你会不会来看。
+明天要进行培训考核了，案例题抽到的是慢乙肝。连续看了很久的慢乙肝、肝硬化，满脑子就都是你，想到散步时你和我说的关于你和你爸的事，很难想象那几年你是怎么熬过来的，太不..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://https://koalabj1205.github.io/missu/">
+  <img class="avatar" src="https://https://koalabj1205.github.io/missu//images/avatar.png?v=1611071110293" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Miss U
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-01-19
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>每当想你却又无法向你倾诉的时候，在这里记录一点点心情吧，不论你会不会来看。</p>
+<p>明天要进行培训考核了，案例题抽到的是慢乙肝。连续看了很久的慢乙肝、肝硬化，满脑子就都是你，想到散步时你和我说的关于你和你爸的事，很难想象那几年你是怎么熬过来的，太不容易了。照顾病人本身就是件非常艰辛的事情，你也没有计较那些不愉快的过往，一个人都这么扛了过来。<br>
+真想抱抱那时才20出头的你，心疼那样的你，承受了那么大的痛苦和压力。我也很难过，为了那点矜持和心思，没能在你和我说的时候抱住你，告诉你，我也想和你一起分担压力和痛苦。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://https://koalabj1205.github.io/missu//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
